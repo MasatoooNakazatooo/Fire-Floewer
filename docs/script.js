@@ -17,11 +17,12 @@ class Firework {
     this.atTop = false;
     this.timer = 0; // 頂点に到達してからのカウント
 
-    const launchSound = document.getElementById('launch-sound');
-    if (launchSound) {
-      launchSound.currentTime = 0;
-      launchSound.play().catch(() => {});
-    }
+    // launchサウンドは初期状態では鳴らさない
+    // const launchSound = document.getElementById('launch-sound');
+    // if (launchSound) {
+    //   launchSound.currentTime = 0;
+    //   launchSound.play().catch(() => {});
+    // }
   }
 
   update() {
